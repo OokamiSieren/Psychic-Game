@@ -23,7 +23,7 @@ var guessesLeft = 10;
 
 
 //User guesses and outcomes
- document.onkeypress = function(event) { var guess = event.key.toLocaleLowerCase(); userGuess.push(guess); 
+ document.onkeypress = function(event) { var guess = event.key.toLocaleLowerCase(); userGuess.push(guess); // allowing capslock letters to work 
      
     console.log("User Guess:" + userGuess);
     //collecting user guess
@@ -70,3 +70,5 @@ document.getElementById("wins").innerHTML = "Wins: " + wins;
 document.getElementById("losses").innerHTML = "Losses: " + losses;
 
 }  
+
+// I used and example and tried to make it my own//
